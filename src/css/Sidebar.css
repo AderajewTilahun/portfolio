@@ -1,0 +1,74 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #0f172a;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
+}
+
+.title {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+  width: 100%;
+  justify-content: center;
+}
+
+.resume-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+.contact-links {
+  width: 100%;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.contact-links a:hover {
+  background: #1e293b;
+  color: #38bdf8;
+}
