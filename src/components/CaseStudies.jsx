@@ -3,8 +3,8 @@ import { FaLightbulb, FaCode, FaChartLine, FaCheckCircle } from "react-icons/fa"
 const CaseStudies = () => {
   const caseStudies = [
     {
-      title: "E-Commerce Platform Redesign",
-      problem: "The existing e-commerce platform had a 40% cart abandonment rate and slow page load times, resulting in lost revenue and poor user experience.",
+      title: "constraction information managment system",
+      problem: "The existing CIMS platform had a 40% cart abandonment rate and slow page load times, resulting in lost revenue and poor user experience.",
       solution: "Implemented a complete frontend overhaul using React with lazy loading, optimized images, and improved checkout flow. Added real-time inventory updates and payment gateway integration.",
       results: [
         "Reduced cart abandonment by 35%",
@@ -22,21 +22,9 @@ const CaseStudies = () => {
         "Improved team productivity by 40%",
         "Reduced project delivery time by 30%",
         "Enhanced communication across teams",
-        "Increased user adoption to 500+ active users"
+        "Increased user adoption to 50+ active users"
       ],
       technologies: ["React", "Socket.io", "Express", "PostgreSQL", "WebRTC"]
-    },
-    {
-      title: "Healthcare Data Analytics Dashboard",
-      problem: "Healthcare providers needed a way to visualize patient data and track health trends, but existing solutions were complex and not user-friendly.",
-      solution: "Developed an intuitive dashboard with interactive charts, real-time data visualization, and HIPAA-compliant data handling. Implemented predictive analytics for patient outcomes.",
-      results: [
-        "Improved patient care decisions by 45%",
-        "Reduced data analysis time by 70%",
-        "Enhanced data security compliance",
-        "Adopted by 15+ healthcare facilities"
-      ],
-      technologies: ["React", "D3.js", "Python", "TensorFlow", "AWS"]
     }
   ];
 

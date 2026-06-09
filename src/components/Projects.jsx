@@ -3,10 +3,17 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 const Projects = () => {
   const projects = [
     {
-      title: "Property Management System",
-      description: "Full-stack system using React, Node.js, and MySQL for managing properties, tenants, and payments.",
+      title: "Construction Information Management System",
+      description: "Full-stack system using React, Node.js, and MySQL for managing properties, consultants, and contractors with real-time updates.",
       technologies: ["React", "Node.js", "MySQL", "Express"],
-      github: "https://github.com/aderajew/property-management",
+      github: "https://github.com/aderajew/construction-information-management",
+      demo: "#"
+    },
+    {
+      title: "Attendance Management System",
+      description: "Full-featured attendance management platform with student management, teacher management, and attendance tracking with reporting.",
+      technologies: ["React", "Node.js", "MongoDB", "Redux"],
+      github: "https://github.com/aderajew/attendance-management",
       demo: "#"
     },
     {
@@ -17,17 +24,38 @@ const Projects = () => {
       demo: "#"
     },
     {
-      title: "Portfolio Website",
-      description: "Professional responsive portfolio website showcasing projects and skills with modern design.",
-      technologies: ["React", "CSS3", "React Icons"],
-      github: "https://github.com/aderajew/portfolio",
+      title: "Face Recognition System",
+      description: "AI-powered face recognition system for attendance tracking and security using Python and machine learning libraries.",
+      technologies: ["Python", "OpenCV", "TensorFlow", "Flask"],
+      github: "https://github.com/aderajew/face-recognition",
       demo: "#"
     },
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce platform with cart functionality, product management, and order processing.",
-      technologies: ["React", "Node.js", "MongoDB", "Redux"],
-      github: "https://github.com/aderajew/ecommerce",
+      title: "Chatting Application",
+      description: "Real-time messaging application with user authentication, group chats, and file sharing capabilities using WebSocket.",
+      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+      github: "https://github.com/aderajew/chatting-app",
+      demo: "#"
+    },
+    {
+      title: "School Management System",
+      description: "Comprehensive school management system with student enrollment, grade management, attendance, and parent communication.",
+      technologies: ["React", "Node.js", "MySQL", "Express"],
+      github: "https://github.com/aderajew/school-management",
+      demo: "#"
+    },
+    {
+      title: "Portfolio Website",
+      description: "Professional responsive portfolio website showcasing projects, skills, and achievements with modern design and dark mode.",
+      technologies: ["React", "CSS3", "React Icons", "EmailJS"],
+      github: "https://github.com/aderajew/portfolio",
+      demo: "https://aderajewtilahun.github.io/portfolio"
+    },
+    {
+      title: "Tsedey Bank Websites",
+      description: "Multiple internal websites and web applications developed for Tsedey Bank including dashboards and management systems.",
+      technologies: ["React", "Node.js", "MySQL"],
+      github: "#",
       demo: "#"
     }
   ];

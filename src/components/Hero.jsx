@@ -1,4 +1,4 @@
-import { FaArrowDown, FaCode, FaLaptopCode, FaDownload } from "react-icons/fa";
+import { FaArrowDown, FaCode, FaLaptopCode, FaDownload, FaAward, FaTrophy } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -7,12 +7,25 @@ const Hero = () => {
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Aderajew Tilahun</h1>
         <h2 className="hero-title">
-          <span className="typing-text">Full-Stack Developer</span>
+          <span className="typing-text">Full-Stack Developer & Information Security Officer</span>
         </h2>
         <p className="hero-description">
           Passionate about building modern web applications with React, Node.js, and MySQL.
-          I create clean, secure, and scalable solutions.
+          I create clean, secure, and scalable solutions. Currently working at Tsedey Bank.
         </p>
+        
+        <div className="hero-achievements">
+          <div className="achievement-badge">
+            <FaAward /> CGPA 3.95
+          </div>
+          <div className="achievement-badge">
+            <FaTrophy /> Gold Medal Award
+          </div>
+          <div className="achievement-badge">
+            <FaAward /> Exit Exam 80%
+          </div>
+        </div>
+        
         <div className="hero-buttons">
           <a href="#projects" className="btn btn-primary">
             <FaLaptopCode /> View My Work

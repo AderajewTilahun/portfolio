@@ -1,26 +1,36 @@
-import { FaReact, FaNodeJs, FaDatabase, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaCode, FaPalette } from "react-icons/fa";
 
 const Skills = () => {
   const skillCategories = [
     {
       category: "Frontend",
       icon: <FaReact />,
-      skills: ["React.js", "HTML5", "CSS3", "JavaScript", "Tailwind CSS"]
+      skills: ["React.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "Styling Frameworks"]
     },
     {
       category: "Backend",
       icon: <FaNodeJs />,
-      skills: ["Node.js", "Express.js", "PHP", "REST APIs"]
+      skills: ["Node.js", "Express.js", "PHP", "Java", "Python", "REST APIs"]
     },
     {
       category: "Database",
       icon: <FaDatabase />,
-      skills: ["MySQL", "MongoDB", "PostgreSQL"]
+      skills: ["MySQL", "PostgreSQL", "MongoDB"]
     },
     {
-      category: "Tools",
+      category: "Programming",
+      icon: <FaCode />,
+      skills: ["JavaScript", "Python", "Java", "PHP", "C#", "TypeScript"]
+    },
+    {
+      category: "Tools & DevOps",
       icon: <FaGitAlt />,
       skills: ["Git", "NPM", "VS Code", "Postman"]
+    },
+    {
+      category: "Learning",
+      icon: <FaPalette />,
+      skills: ["Graphics Design", "Cyber Security", "New Technologies"]
     }
   ];
 

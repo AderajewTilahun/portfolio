@@ -3,51 +3,51 @@ import { FaCalendar, FaTag, FaArrowRight } from "react-icons/fa";
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Building Scalable React Applications",
-      excerpt: "Learn the best practices for building large-scale React applications with proper state management, code organization, and performance optimization techniques.",
+      title: "Building Secure Web Applications",
+      excerpt: "Essential security practices for web development including authentication, data validation, and protection against common vulnerabilities.",
       date: "June 2024",
-      tags: ["React", "JavaScript", "Best Practices"],
+      tags: ["Security", "Web Development", "Best Practices"],
       readTime: "8 min read",
       link: "#"
     },
     {
-      title: "Mastering CSS Grid and Flexbox",
-      excerpt: "A comprehensive guide to modern CSS layout techniques. Learn when to use Grid vs Flexbox and how to create responsive layouts with ease.",
+      title: "Full-Stack Development with React and Node.js",
+      excerpt: "Complete guide to building full-stack applications using React for frontend and Node.js for backend with RESTful APIs.",
       date: "May 2024",
-      tags: ["CSS", "Web Design", "Responsive"],
-      readTime: "6 min read",
-      link: "#"
-    },
-    {
-      title: "Node.js Performance Optimization",
-      excerpt: "Discover techniques to optimize your Node.js applications for better performance, including caching strategies, database optimization, and async operations.",
-      date: "April 2024",
-      tags: ["Node.js", "Backend", "Performance"],
+      tags: ["React", "Node.js", "Full-Stack"],
       readTime: "10 min read",
       link: "#"
     },
     {
-      title: "Introduction to TypeScript",
-      excerpt: "Get started with TypeScript and learn how it can improve your JavaScript development with type safety and better developer experience.",
-      date: "March 2024",
-      tags: ["TypeScript", "JavaScript", "Tutorial"],
+      title: "Database Design: MySQL vs PostgreSQL",
+      excerpt: "Comparing MySQL and PostgreSQL for different use cases, including performance, features, and when to choose each database.",
+      date: "April 2024",
+      tags: ["Database", "MySQL", "PostgreSQL"],
       readTime: "7 min read",
       link: "#"
     },
     {
-      title: "Building RESTful APIs with Express",
-      excerpt: "Learn how to build robust RESTful APIs using Express.js, including routing, middleware, error handling, and authentication.",
+      title: "Building Face Recognition Systems with Python",
+      excerpt: "Introduction to computer vision using Python, OpenCV, and TensorFlow for building face recognition applications.",
+      date: "March 2024",
+      tags: ["Python", "AI", "Computer Vision"],
+      readTime: "12 min read",
+      link: "#"
+    },
+    {
+      title: "Real-Time Applications with Socket.io",
+      excerpt: "Learn how to build real-time messaging and collaboration applications using Socket.io and Node.js.",
       date: "February 2024",
-      tags: ["Express", "API", "Backend"],
+      tags: ["Socket.io", "Real-Time", "Node.js"],
       readTime: "9 min read",
       link: "#"
     },
     {
-      title: "Modern JavaScript Features You Should Know",
-      excerpt: "Explore the latest JavaScript features including async/await, destructuring, spread operator, and more to write cleaner, more efficient code.",
+      title: "Information Security in Banking Systems",
+      excerpt: "Understanding security requirements for banking applications, including encryption, access control, and compliance.",
       date: "January 2024",
-      tags: ["JavaScript", "ES6+", "Tutorial"],
-      readTime: "5 min read",
+      tags: ["Security", "Banking", "Cyber Security"],
+      readTime: "11 min read",
       link: "#"
     }
   ];
