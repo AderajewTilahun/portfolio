@@ -18,7 +18,7 @@ const Sidebar = () => {
       <p className="title">Full Stack Developer</p>
 
       {/* Resume Button */}
-      <a href="./resume.pdf" download className="resume-btn">
+      <a href={process.env.PUBLIC_URL + "/resume.pdf"} download="resume.pdf" className="resume-btn">
         <FaDownload /> Download Resume
       </a>
 
