@@ -33,7 +33,7 @@ const Hero = () => {
           <a href="#contact" className="btn btn-secondary">
             <FaCode /> Get In Touch
           </a>
-          <a href={process.env.PUBLIC_URL + "/resume.pdf"} download="resume.pdf" className="btn btn-resume">
+          <a href="https://aderajewtilahun.github.io/portfolio/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-resume">
             <FaDownload /> Download Resume
           </a>
         </div>
