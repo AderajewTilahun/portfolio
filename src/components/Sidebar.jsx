@@ -18,7 +18,7 @@ const Sidebar = () => {
       <p className="title">Full Stack Developer</p>
 
       {/* Resume Button */}
-      <a href="/resume.pdf" download className="resume-btn">
+      <a href="./resume.pdf" download className="resume-btn">
         <FaDownload /> Download Resume
       </a>
 
