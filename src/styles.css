@@ -912,10 +912,6 @@ body {
   .footer {
     margin-left: 0;
   }
-  
-  .sidebar {
-    display: none;
-  }
 }
 
 /* Dark Mode Styles */

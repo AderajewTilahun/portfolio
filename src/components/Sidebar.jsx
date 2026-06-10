@@ -1,50 +1,62 @@
+import { useState } from "react";
 import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
-  FaDownload
+  FaDownload,
+  FaBars,
+  FaTimes
 } from "react-icons/fa";
 import "../css/Sidebar.css";
 import profileImg from "../assets/profile.png";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <aside className="sidebar">
-      {/* Profile Image */}
-      <img src={profileImg} alt="Aderajew Tilahun" className="profile-img" />
+    <>
+      {/* Hamburger Menu Button (Mobile Only) */}
+      <button className="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
 
-      {/* Name & Title */}
-      <h2 className="name">Aderajew Tilahun</h2>
-      <p className="title">Full Stack Developer</p>
+      <aside className={`sidebar ${isOpen ? "active" : ""}`}>
+        {/* Profile Image */}
+        <img src={profileImg} alt="Aderajew Tilahun" className="profile-img" />
 
-      {/* Resume Button */}
-      <a href={process.env.PUBLIC_URL + "/resume.pdf"} download="resume.pdf" className="resume-btn">
-        <FaDownload /> Download Resume
-      </a>
+        {/* Name & Title */}
+        <h2 className="name">Aderajew Tilahun</h2>
+        <p className="title">Full Stack Developer</p>
 
-      {/* Contact Links */}
-      <div className="contact-links">
-        <a href="mailto:aderajewtilahun495@gmail.com">
-          <FaEnvelope /> aderajewtilahun495@gmail.com
+        {/* Resume Button */}
+        <a href={process.env.PUBLIC_URL + "/resume.pdf"} download="resume.pdf" className="resume-btn">
+          <FaDownload /> Download Resume
         </a>
 
-        <a
-          href="https://github.com/aderajew"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub /> github.com/aderajew
-        </a>
+        {/* Contact Links */}
+        <div className="contact-links">
+          <a href="mailto:aderajewtilahun495@gmail.com">
+            <FaEnvelope /> aderajewtilahun495@gmail.com
+          </a>
 
-        <a
-          href="https://www.linkedin.com/in/aderajew"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin /> linkedin.com/in/aderajew
-        </a>
-      </div>
-    </aside>
+          <a
+            href="https://github.com/aderajew"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub /> github.com/aderajew
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aderajew"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin /> linkedin.com/in/aderajew
+          </a>
+        </div>
+      </aside>
+    </>
   );
 };
 
