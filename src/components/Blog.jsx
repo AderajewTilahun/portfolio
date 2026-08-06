@@ -1,6 +1,11 @@
 import { FaCalendar, FaTag, FaArrowRight } from "react-icons/fa";
 
 const Blog = () => {
+  // To add your actual blog posts:
+  // 1. Write blog posts on platforms like Medium (medium.com), dev.to, or Hashnode
+  // 2. Copy the URLs of your published posts
+  // 3. Replace the "#" in the "link" field below with your actual blog post URLs
+  // 4. Update the title, excerpt, date, tags, and readTime to match your posts
   const blogPosts = [
     {
       title: "Building Secure Web Applications",
@@ -8,7 +13,7 @@ const Blog = () => {
       date: "June 2024",
       tags: ["Security", "Web Development", "Best Practices"],
       readTime: "8 min read",
-      link: "#"
+      link: "#" // Replace with your actual blog post URL (e.g., "https://medium.com/@yourusername/your-post-slug")
     },
     {
       title: "Full-Stack Development with React and Node.js",
@@ -16,7 +21,7 @@ const Blog = () => {
       date: "May 2024",
       tags: ["React", "Node.js", "Full-Stack"],
       readTime: "10 min read",
-      link: "#"
+      link: "#" // Replace with your actual blog post URL
     },
     {
       title: "Database Design: MySQL vs PostgreSQL",
@@ -24,7 +29,7 @@ const Blog = () => {
       date: "April 2024",
       tags: ["Database", "MySQL", "PostgreSQL"],
       readTime: "7 min read",
-      link: "#"
+      link: "#" // Replace with your actual blog post URL
     },
     {
       title: "Building Face Recognition Systems with Python",
@@ -32,7 +37,7 @@ const Blog = () => {
       date: "March 2024",
       tags: ["Python", "AI", "Computer Vision"],
       readTime: "12 min read",
-      link: "#"
+      link: "#" // Replace with your actual blog post URL
     },
     {
       title: "Real-Time Applications with Socket.io",
@@ -40,7 +45,7 @@ const Blog = () => {
       date: "February 2024",
       tags: ["Socket.io", "Real-Time", "Node.js"],
       readTime: "9 min read",
-      link: "#"
+      link: "#" // Replace with your actual blog post URL
     },
     {
       title: "Information Security in Banking Systems",
@@ -48,7 +53,7 @@ const Blog = () => {
       date: "January 2024",
       tags: ["Security", "Banking", "Cyber Security"],
       readTime: "11 min read",
-      link: "#"
+      link: "#" // Replace with your actual blog post URL
     }
   ];
 

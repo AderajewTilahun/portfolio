@@ -12,17 +12,10 @@ const Projects = () => {
     {
       title: "Attendance Management System",
       description: "Full-featured attendance management platform with student management, teacher management, and attendance tracking with reporting.",
-      technologies: ["React", "Node.js", "MongoDB", "Redux"],
+      technologies: ["React", "Node.js", "MySQL", "Redux"],
       github: "https://github.com/aderajew/attendance-management",
       demo: "#"
-    },
-    {
-      title: "Bus Reservation System",
-      description: "Online seat booking system with payment integration, real-time availability, and user authentication.",
-      technologies: ["React", "Node.js", "MySQL", "Stripe"],
-      github: "https://github.com/aderajew/bus-reservation",
-      demo: "#"
-    },
+    },                  
     {
       title: "Face Recognition System",
       description: "AI-powered face recognition system for attendance tracking and security using Python and machine learning libraries.",
@@ -52,9 +45,16 @@ const Projects = () => {
       demo: "https://aderajewtilahun.github.io/portfolio"
     },
     {
-      title: "Tsedey Bank Websites",
-      description: "Multiple internal websites and web applications developed for Tsedey Bank including dashboards and management systems.",
-      technologies: ["React", "Node.js", "MySQL"],
+      title: "Overtime Scheduling Website ",
+      description: "System for managing over time scheduling for employees, time tracking, and reporting capabilities.",
+      technologies: ["React", "Node.js", "MySQL", "Express"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Summary preparation website",       
+      description: "Summary preparation website for Tsedey Bank For SOC to visualize key metrics and data from multiple sources in one centralized view.",
+      technologies: ["React", "Node.js", "Chart.js", "MySQL"],
       github: "#",
       demo: "#"
     }
@@ -84,16 +84,13 @@ const Projects = () => {
                 ))}
               </div>
               <div className="project-links">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                  <FaGithub /> Code
-                </a>
                 <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
                   <FaExternalLinkAlt /> Live Demo
                 </a>
               </div>
             </div>
           </div>
-        ))}
+        ))}       
       </div>
     </section>
   );

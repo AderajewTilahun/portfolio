@@ -8,7 +8,7 @@ import {
   FaTimes
 } from "react-icons/fa";
 import "../css/Sidebar.css";
-import profileImg from "../assets/profile.png";
+import profileImg from "../assets/profile.jpg";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Sidebar = () => {
 
         {/* Name & Title */}
         <h2 className="name">Aderajew Tilahun</h2>
-        <p className="title">Full Stack Developer</p>
+        <p className="title">Full Stack Developer & Information Security Analyst</p>
 
         {/* Resume Button */}
         <a href="https://aderajewtilahun.github.io/portfolio/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">

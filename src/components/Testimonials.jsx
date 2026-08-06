@@ -22,7 +22,7 @@ const Testimonials = () => {
       name: "Teacher Melese Alemante",
       role: "College Director",
       company: "Computing and Informatics College, Mekdela Amba University",
-      content: "Aderajew is a promising young developer with a bright future ahead. His academic performance has been consistently excellent, and he has shown great potential in full-stack development. I highly recommend him for any development opportunity.",
+      content: "Aderajew is a promising young developer with a bright future ahead. His academic performance has been consistently excellent, and he has shown great potential in learning and applying new technologies. I highly recommend him for any development opportunity.",
       rating: 5,
       image: "https://randomuser.me/api/portraits/men/3.jpg"
     }

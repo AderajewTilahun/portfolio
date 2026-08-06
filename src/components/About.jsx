@@ -1,20 +1,45 @@
+import { useState, useEffect } from "react";
 import { FaUserGraduate, FaBriefcase, FaLightbulb, FaShieldAlt, FaAward } from "react-icons/fa";
 
 const About = () => {
+  const [typedText, setTypedText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
+
+  const fullText = "I am a passionate Full-Stack Developer and Information Security Analyst with experience in designing, developing, and securing modern web applications. My technical expertise includes React.js, Node.js, Express.js, MySQL, and RESTful APIs, enabling me to build scalable, efficient, and user-friendly solutions. Currently, I work as an Information Security Analyst at Tsedey Bank, where I monitor security events, investigate incidents, analyze threats, and support the organization's cybersecurity operations. My combined background in software development and cybersecurity allows me to build solutions that are not only functional and scalable but also secure by design. I am continuously expanding my knowledge in cloud technologies, cybersecurity, and modern software engineering practices, with a strong passion for problem-solving, innovation, and delivering impactful digital solutions.";
+
+  useEffect(() => {
+    let index = 0;
+    const typingSpeed = 20;
+
+    const typeNextChar = () => {
+      if (index < fullText.length) {
+        setTypedText(fullText.slice(0, index + 1));
+        index++;
+        setTimeout(typeNextChar, typingSpeed);
+      } else {
+        setIsTyping(false);
+      }
+    };
+
+    typeNextChar();
+
+    return () => {
+      clearTimeout(typeNextChar);
+    };
+  }, []);
+
   return (
     <section id="about" className="section">
       <div className="section-header">
         <h2>About Me</h2>
         <div className="section-line"></div>
       </div>
-      
+
       <div className="about-content">
         <div className="about-text">
           <p className="about-intro">
-            I am a passionate full-stack developer experienced in building
-            modern web applications using React, Node.js, and MySQL.
-            I focus on clean UI, secure systems, and scalable backend solutions.
-            Currently working as Information Security Analyst at Tsedey Bank.
+            {typedText}
+            {isTyping && <span className="typing-cursor">|</span>}
           </p>
           
           <div className="about-details">
