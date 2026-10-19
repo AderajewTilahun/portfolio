@@ -14,9 +14,9 @@ const Contact = () => {
   const [submitError, setSubmitError] = useState("");
 
   // EmailJS Configuration - Replace with your actual credentials
-  const SERVICE_ID = "service_snc2x6w";
+  const SERVICE_ID = "service_5sv3sfi";
   const TEMPLATE_ID = "template_1anrjfc";
-  const PUBLIC_KEY = "yBS93tKAkSyhukexT";
+  const PUBLIC_KEY = "sew29aZSRDDKJXgEl";
 
   const validateForm = () => {
     const newErrors = {};
